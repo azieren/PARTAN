@@ -101,7 +101,7 @@ def backtracking(xk, Q, b, c, mu, eta = 1.6, epsilon = 0.4):
     return criterion, alpha, dk, fx    
     
 def Gradient_Descent_Method(L, mu = 1000):
-    Q, b, c = read_mat('HW6_data.mat')
+    Q, b, c = read_mat('data.mat')
 
     d = len(b)
     # Randomly intialize x_0
@@ -132,7 +132,7 @@ def Gradient_Descent_Method(L, mu = 1000):
     print(len(criterion_list))
     
 def Partan_Method(L, mu = 1000):
-    Q, b, c = read_mat('HW6_data.mat')
+    Q, b, c = read_mat('data.mat')
 
     d = len(b)
     # Randomly intialize x_0
